@@ -1,0 +1,50 @@
+//variables
+@import "variables";
+
+//layouts
+@import "base";
+
+//components
+
+header {
+  margin: 0 auto;
+  width: 96vw;
+  display: flex;
+  justify-content: space-between;
+  padding: $fontSize 0;
+  border-bottom: 1px solid $primaryColor;
+
+  font-family: $fontSecondary;
+  .logo {
+    margin-left: 2vw;
+    font-weight: 700;
+    font-size: $fontSize * 2;
+  }
+  ul {
+    min-width: 50vw;
+    margin-right: 2vw;
+    display: flex;
+    justify-content: center;
+    li {
+      font-size: $fontSize + 4;
+      margin: 0 1vw;
+      text-transform: uppercase;
+    }
+  }
+}
+footer {
+  margin: 0 auto;
+  width: 96vw;
+  text-align: center;
+  font-size: $fontSize;
+  padding: $fontSize 0;
+  border-top: 1px solid $primaryColor;
+}
+
+//Main Contnet
+
+.main-box {
+  margin: $fontSize auto;
+  width: 90vw;
+  min-height: $fontSize * 40;
+}
