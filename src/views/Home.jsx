@@ -1,16 +1,13 @@
-
+import Button from "../layouts/components/Button"
 const Home = () => {
     return (
         <>
-        Home
-            {/* <h1> Home</h1>
-            <div  className="button">
 
-                <div>
-                    <button></button>
-                    <button></button>
-                </div>
-            </div> */}
+            <h1> Home</h1>
+            <Button
+                title={'Welcome to Fruits and Vegies'}
+                button={[['Get Fruits', 'fruits'],['Get Vegies', 'vegies']]}
+            ></Button>
 
         </>
     )

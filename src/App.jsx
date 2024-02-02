@@ -1,5 +1,6 @@
 
 import { RouterProvider } from 'react-router-dom';
+import { ContextProvider } from './utils/Context/ContextProvider';
 import router from './utils/router';
 import './assets/scss/app.scss';
 
@@ -7,7 +8,9 @@ function App() {
 
   return (
     <>
-    <RouterProvider router={router}></RouterProvider>
+      <ContextProvider>
+        <RouterProvider router={router}></RouterProvider>
+      </ContextProvider>
     </>
   )
 }

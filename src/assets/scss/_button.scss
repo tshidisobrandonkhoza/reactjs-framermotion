@@ -1,0 +1,50 @@
+//default button
+
+.button-box {
+  margin: 0 auto;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  h2 {
+    font-weight: 100;
+    text-align: center;
+  }
+  .button-wrapper {
+    margin: $fontSize - 2;
+    display: flex;
+    justify-content: center;
+    button {
+      border-radius: $fontSize;
+      padding: $fontSize - 4;
+
+      margin: $fontSize - 6;
+
+      transition: all 0.2s ease-in-out;
+      a {
+        color: $darkColor;
+      }
+      &:hover {
+        transition: all 0.2s ease-in-out;
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+.button-wrap { 
+  button {
+    border-radius: $fontSize;
+    padding: $fontSize - 4;
+
+    margin: $fontSize - 6;
+    color: $darkColor;
+    transition: all 0.2s ease-in-out;
+    a {
+      color: $darkColor;
+    }
+    &:hover {
+      transition: all 0.2s ease-in-out;
+      opacity: 0.5;
+    }
+  }
+}

@@ -4,6 +4,8 @@ import Home from '../views/Home'
 
 import Fruits from '../views/Fruits'
 import Vegies from '../views/Vegies'
+import Packaging from '../views/Packaging'
+import Order from '../views/Order'
 
 
 
@@ -21,7 +23,14 @@ const router = createBrowserRouter([{
         }, {
             path: '/vegies',
             element: <Vegies />
+        }, {
+            path: '/packaging',
+            element: <Packaging />
+        }, {
+            path: '/order',
+            element: <Order />
         }
+
     ]
 }])
 
