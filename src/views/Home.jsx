@@ -1,15 +1,16 @@
-import Button from "../layouts/components/Button"
+import Button from "../layouts/components/Button" 
+import NavTransition from "../layouts/components/NavTransition"
+// import transition from "../layouts/components/NavTransition"
 const Home = () => {
     return (
-        <>
+        <NavTransition>
 
-            <h1> Home</h1>
             <Button
                 title={'Welcome to Fruits and Vegies'}
-                button={[['Get Fruits', 'fruits'],['Get Vegies', 'vegies']]}
+                button={[['Get Fruits', 'fruits'], ['Get Vegies', 'vegies']]}
             ></Button>
 
-        </>
+        </NavTransition>
     )
 }
 

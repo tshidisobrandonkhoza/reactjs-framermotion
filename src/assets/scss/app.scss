@@ -6,7 +6,7 @@
 
 //components
 
-@import 'button.scss';
+@import "button.scss";
 
 header {
   margin: 0 auto;
@@ -46,7 +46,27 @@ footer {
 //Main Contnet
 
 .main-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: $fontSize auto;
   width: 90vw;
-  min-height: $fontSize * 40;
+  height: calc(100vh - 20vh);
+  div:first-child {
+    min-height: 150px;
+    min-width: 150px; 
+  }
+  h4{
+    margin: .3em auto;
+  }
+  h5{
+    margin: .1em auto;
+    text-decoration: underline;
+  }
+  h6{
+    margin: .1em auto; 
+  }
+  li {
+    cursor: pointer;
+  }
 }

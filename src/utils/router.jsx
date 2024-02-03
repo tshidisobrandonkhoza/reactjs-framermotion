@@ -6,10 +6,13 @@ import Fruits from '../views/Fruits'
 import Vegies from '../views/Vegies'
 import Packaging from '../views/Packaging'
 import Order from '../views/Order'
+//import { AnimatePresence } from 'framer-motion'
 
 
 
-const router = createBrowserRouter([{
+const router = createBrowserRouter(
+    
+    [{
     path: '/',
     element: <MainRoot />,
     children: [

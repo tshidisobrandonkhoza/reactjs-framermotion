@@ -1,13 +1,16 @@
-import { Outlet } from 'react-router-dom'
+
 import Header from "./components/Header"
 import Footer from "./components/Footer"
+import AnimatedOutlet from './components/AnimatedOutlet'
+ 
 
 const MainRoot = () => {
+
     return (
         <>
             <Header></Header>
             <div className='main-box'>
-                <Outlet />
+                <AnimatedOutlet />
             </div>
             <Footer></Footer>
         </>

@@ -27,3 +27,42 @@ html {
     rgba(67, 104, 80, 1) 100%
   );
 }
+
+//Route Loader
+
+.route-transitions {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(173, 188, 159, 1);
+
+  transform-origin: top;
+}
+
+//Modal Style
+.bDrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(173, 188, 159, 0.5);
+
+  z-index: 5;
+  div {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 2em;
+    right: 2em;
+    width: auto;
+    height: 2em;
+    padding: 0 1em;
+    border-radius: 3em;
+    cursor: pointer;
+    color: red;
+    background-color: #fff;
+  }
+}
